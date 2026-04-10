@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Take Action — GNET Initiative</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">GNET</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="groups.html">Groups</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="book-online.html">Book Online</a></li>
+    </ul>
+    <a href="take-action.html" class="btn-action">Take Action</a>
+    <button class="nav-toggle">&#9776;</button>
+  </nav>
+
+  <section class="action-section" style="min-height:90vh; align-items:center;">
+    <div class="action-text">
+      <h2>SUPPORT THE<br>FUTURE</h2>
+      <p>Join us in our mission to bridge the education gap in rural communities. Your support empowers girls across Africa and the Middle East with the tools for a brighter tomorrow.</p>
+    </div>
+    <div class="action-form">
+      <h3>GNET Ambassadorial Form</h3>
+      <p class="form-sub">Please fill out all required information below.</p>
+      <div class="form-row">
+        <div class="form-group">
+          <label>First name *</label>
+          <input type="text" placeholder="First name" />
+        </div>
+        <div class="form-group">
+          <label>Last name *</label>
+          <input type="text" placeholder="Last name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Gender *</label>
+        <select>
+          <option value="">Select gender</option>
+          <option>Female</option>
+          <option>Male</option>
+          <option>Non-binary</option>
+          <option>Prefer not to say</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Birthday *</label>
+        <div class="form-row">
+          <div class="form-group" style="margin-bottom:0">
+            <label style="font-size:0.78rem;">Month</label>
+            <select>
+              <option value="">Month</option>
+              <option>January</option><option>February</option><option>March</option>
+              <option>April</option><option>May</option><option>June</option>
+              <option>July</option><option>August</option><option>September</option>
+              <option>October</option><option>November</option><option>December</option>
+            </select>
+          </div>
+          <div class="form-group" style="margin-bottom:0">
+            <label style="font-size:0.78rem;">Day</label>
+            <input type="number" placeholder="DD" min="1" max="31" />
+          </div>
+          <div class="form-group" style="margin-bottom:0">
+            <label style="font-size:0.78rem;">Year</label>
+            <input type="number" placeholder="YYYY" min="1900" max="2025" />
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email *</label>
+        <input type="email" placeholder="your@email.com" />
+      </div>
+      <div class="form-group">
+        <label>Country *</label>
+        <input type="text" placeholder="Your country" />
+      </div>
+      <div class="form-group">
+        <label>Why do you want to be a GNET Ambassador? *</label>
+        <textarea rows="4" placeholder="Tell us about yourself..." style="width:100%;padding:0.7rem 1rem;border:none;border-radius:2px;background:rgba(139,0,0,0.12);color:#8B0000;font-family:'DM Sans',sans-serif;font-size:0.95rem;outline:none;resize:vertical;"></textarea>
+      </div>
+      <button class="btn-submit" onclick="alert('Thank you for your application! We will be in touch soon.')">Submit Application</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">GNET</div>
+        <p>Girls Need Education Initiative</p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="book-online.html">Book Online</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Location</h4>
+        <p>Columbus, OH</p>
+        <a href="mailto:collaborations@gnet-initiative.org">collaborations@gnet-initiative.org</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Girls Need Education Initiative. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
