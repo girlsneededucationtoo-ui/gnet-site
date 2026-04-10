@@ -1,6 +1,6 @@
 # GNET Initiative — Girls Need Education
 
-A hand-coded HTML/CSS/JS website rebuilt from the original Wix layout for the **Girls Need Education (GNET) Initiative**, a nonprofit providing financial aid and advocacy for girls' education in rural Africa and the Middle East.
+A hand-coded HTML/CSS/JS website rebuilt from the original Wix layout for the **Girls Need Education Too (GNET) Initiative**, a nonprofit providing financial aid and advocacy for girls' education in rural Africa and the Middle East.
 
 ## Project Structure
 
