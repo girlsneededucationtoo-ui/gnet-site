@@ -62,5 +62,5 @@ Place your images in the `/images/` folder and update the `src` attributes in th
 
 ## Contact
 
-**Columbus, OH**  
-collaborations@gnet-initiative.org
+**Columbus, OH** 
+girlsneededucationtoo@gmail.com
