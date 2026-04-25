@@ -209,7 +209,23 @@
 
     <a href="blog.html" class="back-link">← Back to Blog</a>
   </div>
-
+<!-- Disqus Comments -->
+<div style="max-width:780px; margin:0 auto; padding:0 2rem 4rem;">
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = window.location.href;
+      this.page.identifier = window.location.pathname;
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://gnet-initiative.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
