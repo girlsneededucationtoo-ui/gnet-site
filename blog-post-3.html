@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Financial Aid Initiatives Supporting Girls — GNET</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    .blog-post-hero {
+      background: var(--red-mid);
+      padding: 5rem 3rem 3rem;
+      text-align: center;
+    }
+    .blog-post-hero .label { display: block; margin-bottom: 1rem; }
+    .blog-post-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 900;
+      line-height: 1.1;
+      max-width: 800px;
+      margin: 0 auto 1.5rem;
+    }
+    .blog-post-hero .meta { color: var(--text-light); font-size: 0.9rem; }
+    .blog-body {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+    .blog-body h2 {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin: 2.5rem 0 1rem;
+    }
+    .blog-body p {
+      color: var(--text-light);
+      line-height: 1.85;
+      font-size: 1.05rem;
+      margin-bottom: 1.5rem;
+    }
+    .blog-body strong { color: var(--white); }
+    .blog-divider {
+      border: none;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      margin: 2.5rem 0;
+    }
+    .impact-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .impact-box {
+      background: var(--red-light);
+      border-radius: 4px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .impact-box .num {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: var(--cream);
+      margin-bottom: 0.25rem;
+    }
+    .impact-box p { font-size: 0.85rem; color: var(--text-light); margin-bottom: 0; }
+    .donate-tiers {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.25rem;
+      margin: 2rem 0;
+    }
+    .donate-tier {
+      background: var(--red-light);
+      border-radius: 4px;
+      padding: 1.75rem 1.5rem;
+      text-align: center;
+      border: 2px solid transparent;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .donate-tier:hover { border-color: var(--cream); transform: translateY(-3px); }
+    .donate-tier.featured { border-color: var(--cream); }
+    .donate-tier .amount {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--cream);
+      margin-bottom: 0.5rem;
+    }
+    .donate-tier h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.75rem; }
+    .donate-tier p { font-size: 0.85rem; color: var(--text-light); line-height: 1.6; margin-bottom: 0; }
+    .quote-block {
+      border-left: 3px solid var(--cream);
+      padding: 1rem 1.5rem;
+      margin: 2rem 0;
+      background: rgba(255,255,255,0.05);
+      border-radius: 0 4px 4px 0;
+    }
+    .quote-block p { font-style: italic; font-size: 1.1rem; color: var(--cream); margin-bottom: 0; }
+    .donate-cta {
+      background: var(--cream);
+      color: var(--red-dark);
+      border-radius: 4px;
+      padding: 3rem 2.5rem;
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .donate-cta h3 { font-family: var(--font-display); font-size: 2rem; font-weight: 900; margin-bottom: 1rem; }
+    .donate-cta p { color: var(--red-soft); margin-bottom: 2rem; font-size: 1rem; line-height: 1.7; }
+    .btn-donate {
+      display: inline-block;
+      background: var(--red-dark);
+      color: var(--white);
+      border-radius: 2rem;
+      padding: 1rem 2.5rem;
+      font-weight: 700;
+      font-size: 1.05rem;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn-donate:hover { background: var(--red-mid); }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--cream);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+    }
+    .back-link:hover { opacity: 1; }
+    @media (max-width: 600px) {
+      .blog-post-hero, .blog-body { padding: 3rem 1.5rem; }
+      .impact-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">GNET</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="groups.html">Groups</a></li>
+      <li><a href="teach.html">Teach</a></li>
+      <li><a href="book-online.html">Book Online</a></li>
+    </ul>
+    <a href="take-action.html" class="btn-action">Take Action</a>
+    <button class="nav-toggle">&#9776;</button>
+  </nav>
+
+  <section class="blog-post-hero">
+    <span class="label">Financial Aid</span>
+    <h1>Financial Aid Initiatives Supporting Girls</h1>
+    <div class="meta">By Nhyira Frempong · March 23 · 4 min read</div>
+  </section>
+
+  <div class="blog-body">
+    <a href="blog.html" class="back-link">← Back to Blog</a>
+
+    <p>Education is a fundamental right. Yet for millions of girls across rural Africa and the Middle East, the cost of going to school — school fees, uniforms, books, transportation — is simply out of reach. Families living on less than $2 a day are forced to make impossible choices. And too often, it is the daughter who loses out.</p>
+
+    <p>This is where financial aid changes everything. A scholarship is not just money — it is a girl's entire future. It is the difference between a life of limitation and a life of possibility. At GNET, financial support for girls' education is at the core of everything we do.</p>
+
+    <hr class="blog-divider" />
+
+    <h2>The Cost of Being Left Behind</h2>
+
+    <p>When a girl drops out of school due to financial hardship, the ripple effects are devastating — not just for her, but for her entire community. She is more likely to be married young. More likely to have children before she is ready. More likely to live in poverty. And her own daughters are more likely to face the same fate.</p>
+
+    <div class="quote-block">
+      <p>"Educating girls is not charity. It is one of the best investments a society can make." — World Bank</p>
+    </div>
+
+    <p>Every year a girl stays in school, her future earning potential increases by up to <strong>25%</strong>. Every dollar invested in girls' education generates an estimated <strong>$2.80 in economic growth</strong>. The numbers are clear. The question is: will we act on them?</p>
+
+    <hr class="blog-divider" />
+
+    <h2>Our Impact So Far</h2>
+
+    <p>GNET has been working tirelessly to bridge the financial gap that stands between girls and their education. Here is what your support has already made possible:</p>
+
+    <div class="impact-row">
+      <div class="impact-box">
+        <div class="num">12</div>
+        <p>Countries where GNET is actively working</p>
+      </div>
+      <div class="impact-box">
+        <div class="num">45</div>
+        <p>NGO partners amplifying our reach</p>
+      </div>
+      <div class="impact-box">
+        <div class="num">200K</div>
+        <p>Lives impacted through our programs</p>
+      </div>
+    </div>
+
+    <p>Behind every one of those numbers is a real girl. A real family. A real community that is better off because someone — someone like you — decided to help.</p>
+
+    <hr class="blog-divider" />
+
+    <h2>What Your Donation Does</h2>
+
+    <p>At GNET, we believe in full transparency. When you donate to GNET, here is exactly where your money goes:</p>
+
+    <div class="donate-tiers">
+      <div class="donate-tier">
+        <div class="amount">$10</div>
+        <h4>Supplies a Girl</h4>
+        <p>Covers one month of school supplies — notebooks, pens, and learning materials for one girl.</p>
+      </div>
+      <div class="donate-tier featured">
+        <div class="amount">$30</div>
+        <h4>Funds a Seminar</h4>
+        <p>Helps fund one community awareness seminar, reaching entire families with the message that girls deserve education.</p>
+      </div>
+      <div class="donate-tier">
+        <div class="amount">$50</div>
+        <h4>Pays School Fees</h4>
+        <p>Covers one term of school fees for a girl in rural Africa who would otherwise be unable to attend.</p>
+      </div>
+      <div class="donate-tier">
+        <div class="amount">$100</div>
+        <h4>Changes a Semester</h4>
+        <p>Provides comprehensive support for one girl for an entire semester — fees, supplies, and resources.</p>
+      </div>
+    </div>
+
+    <hr class="blog-divider" />
+
+    <h2>Why Your Support Matters More Than Ever</h2>
+
+    <p>The global education crisis for girls is not getting better on its own. Conflict, climate change, and economic instability are pushing more girls out of school every year. The organizations and governments working on this issue are stretched thin. They need support from everyday people who believe in the cause.</p>
+
+    <p><strong>That is where you come in.</strong></p>
+
+    <p>You do not have to be wealthy to make a difference. A $10 donation from 100 people is $1,000 — enough to change the trajectory of multiple girls' lives. A $30 donation funds an entire seminar that reaches a whole village. Every amount matters. Every contribution counts.</p>
+
+    <p>Beyond money, you can also support GNET by spreading our message, joining our student club, volunteering your skills, or partnering with us as an organization. The fight for girls' education needs every kind of support we can get.</p>
+
+    <hr class="blog-divider" />
+
+    <h2>The Urgency Is Real</h2>
+
+    <p>131 million girls are out of school right now. Not yesterday. Not last year. <strong>Right now, today,</strong> as you read this. Every day we wait is another day a girl falls further behind — further from the future she deserves.</p>
+
+    <p>We cannot wait for governments to fix this alone. We cannot wait for the perfect moment. The moment is now. The need is now. And the power to help is in your hands.</p>
+
+    <div class="donate-cta">
+      <h3>Support a Girl's Education Today</h3>
+      <p>Your donation — no matter the size — directly funds scholarships, seminars, and educational resources for girls who have no other options. Be the reason a girl stays in school.</p>
+      <a href="mailto:girlsneededucation@gmail.com?subject=Donation%20to%20GNET" class="btn-donate">Donate to GNET</a>
+    </div>
+
+    <a href="blog.html" class="back-link">← Back to Blog</a>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">GNET</div>
+        <p>Girls Need Education Initiative</p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="teach.html">Teach</a></li>
+          <li><a href="book-online.html">Book Online</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Location</h4>
+        <p>Columbus, OH</p>
+        <a href="mailto:girlsneededucation@gmail.com">girlsneededucation@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Girls Need Education Initiative. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
