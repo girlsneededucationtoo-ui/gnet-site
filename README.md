@@ -26,7 +26,6 @@ gnet-site/
 |------|-------------|
 | `index.html` | Homepage with hero, mission, financial support, impact stats, marquee, ambassador form |
 | `pages/blog.html` | Blog post grid |
-| `pages/groups.html` | Community groups feed + sidebar |
 | `pages/events.html` | Upcoming events grid |
 | `pages/book-online.html` | Services booking (Partnership Session, Funding Workshop, Awareness Seminar) |
 | `pages/take-action.html` | Full ambassador application form |
