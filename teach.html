@@ -3,8 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico"> 
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <title>Student Teaches Students — GNET Initiative</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -321,10 +319,11 @@
 <body>
 
   <nav class="navbar">
-  <a href="index.html" class="nav-logo">GNET</a>
+    <div class="nav-logo">GNET</div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="blog.html">Blog</a></li>
+      <li><a href="groups.html">Groups</a></li>
       <li><a href="teach.html" class="active">Teach</a></li>
       <li><a href="book-online.html">Book Online</a></li>
     </ul>
@@ -554,7 +553,7 @@
     <h2>Submit Your Lesson</h2>
     <p class="sub">Fill out the form and upload your 10–20 minute teaching video.</p>
 
-    <div class="submit-form">
+    <div class="submit-form"><form action="https://formspree.io/f/mgodwrkd" method="POST" enctype="multipart/form-data">
 
       <div class="guidelines">
         <h4>Video Guidelines</h4>
@@ -570,17 +569,17 @@
 
       <div class="form-group">
         <label>Your Full Name *</label>
-        <input type="text" placeholder="First and last name" />
+        <input type="text" name="full_name" placeholder="First and last name" required />
       </div>
 
       <div class="form-group">
         <label>Your Email *</label>
-        <input type="email" placeholder="your@email.com" />
+        <input type="email" name="email" placeholder="your@email.com" required />
       </div>
 
       <div class="form-group">
         <label>Your School / Organization</label>
-        <input type="text" placeholder="e.g. Columbus High School" />
+        <input type="text" name="school" placeholder="e.g. Columbus High School" />
       </div>
 
       <div class="form-group">
@@ -632,7 +631,7 @@
 
       <div class="form-group">
         <label>Brief Description of Your Lesson *</label>
-        <textarea rows="4" placeholder="What will you cover in your video? What will students learn?"></textarea>
+        <textarea rows="4" name="description" placeholder="What will you cover in your video? What will students learn?"></textarea>
       </div>
 
       <div class="form-group">
@@ -646,7 +645,7 @@
         <p id="fileName" style="margin-top:0.5rem; font-size:0.85rem; color:var(--red-dark); display:none;"></p>
       </div>
 
-      <button class="btn-submit" onclick="handleSubmit()">Submit My Lesson 🎓</button>
+      <button type="submit" class="btn-submit">Submit My Lesson 🎓</button></form>
     </div>
   </section>
 
