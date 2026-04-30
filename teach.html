@@ -13,12 +13,12 @@
       text-align: center;
       border-bottom: 1px solid rgba(255,255,255,0.1);
     }
-
+ 
     .sts-hero .label {
       display: block;
       margin-bottom: 1rem;
     }
-
+ 
     .sts-hero h1 {
       font-family: var(--font-display);
       font-size: clamp(2.5rem, 6vw, 4.5rem);
@@ -26,7 +26,7 @@
       line-height: 1.05;
       margin-bottom: 1.5rem;
     }
-
+ 
     .sts-hero p {
       color: var(--text-light);
       font-size: 1.1rem;
@@ -34,20 +34,20 @@
       margin: 0 auto 2rem;
       line-height: 1.75;
     }
-
+ 
     .how-it-works {
       background: var(--red-mid);
       padding: 4rem 3rem;
       text-align: center;
     }
-
+ 
     .how-it-works h2 {
       font-family: var(--font-display);
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 3rem;
     }
-
+ 
     .steps {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -55,14 +55,14 @@
       max-width: 900px;
       margin: 0 auto;
     }
-
+ 
     .step {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 1rem;
     }
-
+ 
     .step-number {
       width: 52px;
       height: 52px;
@@ -76,26 +76,26 @@
       font-weight: 900;
       color: var(--cream);
     }
-
+ 
     .step h3 {
       font-family: var(--font-display);
       font-size: 1.1rem;
       font-weight: 700;
     }
-
+ 
     .step p {
       color: var(--text-light);
       font-size: 0.9rem;
       line-height: 1.65;
       text-align: center;
     }
-
+ 
     /* Topics section */
     .topics-section {
       background: var(--red-dark);
       padding: 5rem 3rem;
     }
-
+ 
     .topics-section h2 {
       font-family: var(--font-display);
       font-size: 2.2rem;
@@ -103,19 +103,19 @@
       text-align: center;
       margin-bottom: 0.75rem;
     }
-
+ 
     .topics-section .sub {
       text-align: center;
       color: var(--text-light);
       margin-bottom: 3rem;
       font-size: 1rem;
     }
-
+ 
     .subject-block {
       max-width: 1100px;
       margin: 0 auto 3rem;
     }
-
+ 
     .subject-title {
       display: flex;
       align-items: center;
@@ -124,21 +124,21 @@
       padding-bottom: 0.75rem;
       border-bottom: 1px solid rgba(255,255,255,0.15);
     }
-
+ 
     .subject-icon { font-size: 1.5rem; }
-
+ 
     .subject-title h3 {
       font-family: var(--font-display);
       font-size: 1.3rem;
       font-weight: 700;
     }
-
+ 
     .topics-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
       gap: 1rem;
     }
-
+ 
     .topic-card {
       background: var(--red-light);
       border-radius: 4px;
@@ -148,17 +148,17 @@
       transition: border-color 0.2s, transform 0.2s, background 0.2s;
       position: relative;
     }
-
+ 
     .topic-card:hover {
       border-color: var(--cream);
       transform: translateY(-2px);
     }
-
+ 
     .topic-card.selected {
       border-color: var(--cream);
       background: #B5534A;
     }
-
+ 
     .topic-card.selected::after {
       content: "✓";
       position: absolute;
@@ -168,20 +168,20 @@
       font-weight: 700;
       font-size: 1rem;
     }
-
+ 
     .topic-card h4 {
       font-weight: 600;
       font-size: 0.95rem;
       margin-bottom: 0.35rem;
       color: var(--white);
     }
-
+ 
     .topic-card p {
       font-size: 0.8rem;
       color: var(--text-light);
       line-height: 1.5;
     }
-
+ 
     /* Selected topic display */
     .selected-topic-bar {
       position: sticky;
@@ -195,12 +195,12 @@
       z-index: 50;
       box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
     }
-
+ 
     .selected-topic-bar.visible { display: flex; }
-
+ 
     .selected-topic-bar .selected-info { font-weight: 600; font-size: 1rem; }
     .selected-topic-bar .selected-info span { font-weight: 400; font-size: 0.9rem; opacity: 0.7; display: block; }
-
+ 
     .btn-proceed {
       background: var(--red-dark);
       color: var(--white);
@@ -213,15 +213,15 @@
       cursor: pointer;
       transition: background 0.2s;
     }
-
+ 
     .btn-proceed:hover { background: var(--red-mid); }
-
+ 
     /* Submit section */
     .submit-section {
       background: var(--red-soft);
       padding: 5rem 3rem;
     }
-
+ 
     .submit-section h2 {
       font-family: var(--font-display);
       font-size: 2rem;
@@ -229,13 +229,13 @@
       text-align: center;
       margin-bottom: 0.75rem;
     }
-
+ 
     .submit-section .sub {
       text-align: center;
       color: var(--text-light);
       margin-bottom: 3rem;
     }
-
+ 
     .submit-form {
       background: var(--cream);
       color: var(--red-dark);
@@ -244,9 +244,9 @@
       max-width: 680px;
       margin: 0 auto;
     }
-
+ 
     .submit-form .form-group { margin-bottom: 1.25rem; }
-
+ 
     .submit-form label {
       display: block;
       font-size: 0.85rem;
@@ -254,7 +254,7 @@
       color: var(--red-dark);
       margin-bottom: 0.4rem;
     }
-
+ 
     .submit-form input,
     .submit-form select,
     .submit-form textarea {
@@ -269,15 +269,15 @@
       outline: none;
       transition: background 0.2s;
     }
-
+ 
     .submit-form input:focus,
     .submit-form select:focus,
     .submit-form textarea:focus {
       background: rgba(139,0,0,0.18);
     }
-
+ 
     .submit-form textarea { resize: vertical; }
-
+ 
     .video-upload-box {
       border: 2px dashed rgba(139,0,0,0.3);
       border-radius: 4px;
@@ -287,28 +287,28 @@
       transition: border-color 0.2s, background 0.2s;
       background: rgba(139,0,0,0.05);
     }
-
+ 
     .video-upload-box:hover {
       border-color: var(--red-dark);
       background: rgba(139,0,0,0.1);
     }
-
+ 
     .video-upload-box .upload-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
     .video-upload-box p { color: var(--red-dark); font-weight: 600; margin-bottom: 0.35rem; }
     .video-upload-box span { font-size: 0.8rem; color: var(--red-soft); }
-
+ 
     .guidelines {
       background: rgba(139,0,0,0.08);
       border-radius: 4px;
       padding: 1.25rem;
       margin-bottom: 1.25rem;
     }
-
+ 
     .guidelines h4 { font-size: 0.9rem; font-weight: 700; color: var(--red-dark); margin-bottom: 0.75rem; }
     .guidelines ul { list-style: none; }
     .guidelines li { font-size: 0.85rem; color: var(--red-dark); padding: 0.2rem 0; opacity: 0.85; }
     .guidelines li::before { content: "→ "; font-weight: 700; }
-
+ 
     @media (max-width: 900px) {
       .steps { grid-template-columns: 1fr; }
       .sts-hero, .topics-section, .submit-section, .how-it-works { padding: 3rem 1.5rem; }
@@ -317,7 +317,7 @@
   </style>
 </head>
 <body>
-
+ 
   <nav class="navbar">
     <div class="nav-logo">GNET</div>
     <ul class="nav-links">
@@ -330,7 +330,7 @@
     <a href="take-action.html" class="btn-action">Take Action</a>
     <button class="nav-toggle">&#9776;</button>
   </nav>
-
+ 
   <!-- HERO -->
   <section class="sts-hero">
     <span class="label">Student Teaches Students</span>
@@ -338,7 +338,7 @@
     <p>Pick a topic, record a 10–20 minute lesson, and help girls in rural Africa and the Middle East who have never had access to a real classroom.</p>
     <a href="#topics" class="btn-primary">Browse Topics</a>
   </section>
-
+ 
   <!-- HOW IT WORKS -->
   <section class="how-it-works">
     <h2>How It Works</h2>
@@ -360,12 +360,12 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- TOPICS -->
   <section class="topics-section" id="topics">
     <h2>Choose Your Topic</h2>
     <p class="sub">Click a topic to select it — then scroll down to submit your video.</p>
-
+ 
     <!-- MATH -->
     <div class="subject-block">
       <div class="subject-title">
@@ -395,7 +395,7 @@
         </div>
       </div>
     </div>
-
+ 
     <!-- SCIENCE -->
     <div class="subject-block">
       <div class="subject-title">
@@ -425,7 +425,7 @@
         </div>
       </div>
     </div>
-
+ 
     <!-- LIFE SKILLS -->
     <div class="subject-block">
       <div class="subject-title">
@@ -455,7 +455,7 @@
         </div>
       </div>
     </div>
-
+ 
     <!-- LANGUAGE & LITERACY -->
     <div class="subject-block">
       <div class="subject-title">
@@ -481,7 +481,7 @@
         </div>
       </div>
     </div>
-
+ 
     <!-- TECHNOLOGY -->
     <div class="subject-block">
       <div class="subject-title">
@@ -507,7 +507,7 @@
         </div>
       </div>
     </div>
-
+ 
     <!-- LEADERSHIP -->
     <div class="subject-block">
       <div class="subject-title">
@@ -537,9 +537,9 @@
         </div>
       </div>
     </div>
-
+ 
   </section>
-
+ 
   <!-- STICKY BAR -->
   <div class="selected-topic-bar" id="selectedBar">
     <div class="selected-info">
@@ -547,146 +547,28 @@
     </div>
     <button class="btn-proceed" onclick="document.getElementById('submit').scrollIntoView({behavior:'smooth'})">Submit Your Video ↓</button>
   </div>
-
+ 
   <!-- SUBMIT -->
   <section class="submit-section" id="submit">
     <h2>Submit Your Lesson</h2>
-    <p class="sub">Fill out the form and upload your 10–20 minute teaching video.</p>
-
-    <div class="submit-form"><form action="https://formspree.io/f/mgodwrkd" method="POST" enctype="multipart/form-data">
-
-      <div class="guidelines">
-        <h4>Video Guidelines</h4>
-        <ul>
-          <li>Length: 10 to 20 minutes</li>
-          <li>Speak clearly and at a steady pace</li>
-          <li>Use simple language — your audience may be beginner learners</li>
-          <li>Good lighting and minimal background noise</li>
-          <li>You can use a whiteboard, slides, or just speak to camera</li>
-          <li>Accepted formats: MP4, MOV, AVI</li>
-        </ul>
-      </div>
-
-      <div class="form-group">
-        <label>Your Full Name *</label>
-        <input type="text" name="full_name" placeholder="First and last name" required />
-      </div>
-
-      <div class="form-group">
-        <label>Your Email *</label>
-        <input type="email" name="email" placeholder="your@email.com" required />
-      </div>
-
-      <div class="form-group">
-        <label>Your School / Organization</label>
-        <input type="text" name="school" placeholder="e.g. Columbus High School" />
-      </div>
-
-      <div class="form-group">
-        <label>Topic You Are Teaching *</label>
-        <select id="topicDropdown">
-          <option value="">Select a topic</option>
-          <optgroup label="Mathematics">
-            <option>Basic Arithmetic</option>
-            <option>Fractions & Decimals</option>
-            <option>Algebra Basics</option>
-            <option>Geometry Fundamentals</option>
-            <option>Data & Statistics</option>
-          </optgroup>
-          <optgroup label="Science">
-            <option>Biology Basics</option>
-            <option>Chemistry Introduction</option>
-            <option>Environmental Science</option>
-            <option>Physics Fundamentals</option>
-            <option>Human Health & Nutrition</option>
-          </optgroup>
-          <optgroup label="Life Skills">
-            <option>Financial Literacy</option>
-            <option>Hygiene & Health</option>
-            <option>Reproductive Health</option>
-            <option>Conflict Resolution</option>
-            <option>Time Management</option>
-          </optgroup>
-          <optgroup label="Language & Literacy">
-            <option>Reading Comprehension</option>
-            <option>Writing Skills</option>
-            <option>English as a Second Language</option>
-            <option>Storytelling & Expression</option>
-          </optgroup>
-          <optgroup label="Technology">
-            <option>Basic Computer Skills</option>
-            <option>Internet Safety</option>
-            <option>Introduction to Coding</option>
-            <option>Digital Communication</option>
-          </optgroup>
-          <optgroup label="Leadership & Confidence">
-            <option>Public Speaking</option>
-            <option>Goal Setting</option>
-            <option>Self-Confidence & Identity</option>
-            <option>Community Leadership</option>
-            <option>Girls Rights & Advocacy</option>
-          </optgroup>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label>Brief Description of Your Lesson *</label>
-        <textarea rows="4" name="description" placeholder="What will you cover in your video? What will students learn?"></textarea>
-      </div>
-
-      <div class="form-group">
-        <label>Upload Your Video *</label>
-        <div class="video-upload-box" onclick="document.getElementById('videoFile').click()">
-          <div class="upload-icon">🎥</div>
-          <p>Click to upload your video</p>
-          <span>MP4, MOV, AVI · 10–20 minutes · Max 2GB</span>
-          <input type="file" id="videoFile" accept="video/*" style="display:none" onchange="handleFile(this)" />
-        </div>
-        <p id="fileName" style="margin-top:0.5rem; font-size:0.85rem; color:var(--red-dark); display:none;"></p>
-      </div>
-
-      <button type="submit" class="btn-submit">Submit My Lesson 🎓</button></form>
+    <p class="sub">Fill out the form below and upload your 10–20 minute teaching video. Your video will be saved directly to GNET's Google Drive.</p>
+    <div style="max-width:780px; margin:0 auto; border-radius:8px; overflow:hidden;">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf8THv6LMkHdWmgBUZaTKO7dHSR1m-Nq23DLpoiLIq22DAcgg/viewform?embedded=true" width="100%" height="1400" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
     </div>
   </section>
-
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="footer-logo">GNET</div>
-        <p>Girls Need Education Initiative</p>
-      </div>
-      <div class="footer-links">
-        <h4>Pages</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="teach.html">Teach</a></li>
-          <li><a href="book-online.html">Book Online</a></li>
-        </ul>
-      </div>
-      <div class="footer-contact">
-        <h4>Location</h4>
-        <p>Columbus, OH</p>
-        <a href="mailto:girlsneededucation@gmail.com">girlsneededucation@gmail.com</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2021 Girls Need Education Initiative. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="main.js"></script>
+ 
+    <script src="main.js"></script>
   <script>
     let currentCard = null;
-
+ 
     function selectTopic(card, topicName) {
       if (currentCard) currentCard.classList.remove('selected');
       card.classList.add('selected');
       currentCard = card;
-
+ 
       document.getElementById('selectedTopicName').textContent = topicName;
       document.getElementById('selectedBar').classList.add('visible');
-
+ 
       const dropdown = document.getElementById('topicDropdown');
       for (let i = 0; i < dropdown.options.length; i++) {
         if (dropdown.options[i].text === topicName) {
@@ -695,7 +577,7 @@
         }
       }
     }
-
+ 
     function handleFile(input) {
       const file = input.files[0];
       if (file) {
@@ -704,7 +586,7 @@
         nameEl.style.display = 'block';
       }
     }
-
+ 
     function handleSubmit() {
       alert('Thank you for submitting your lesson! The GNET team will review your video and be in touch within 3-5 business days.');
     }
