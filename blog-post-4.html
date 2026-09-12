@@ -1,1 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <title>Beyond Education: Challenging Heights and the Fight for a Different Future | GNET</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+
+    .blog-post-hero {
+      background: var(--red-mid);
+      padding: 5rem 3rem 3rem;
+      text-align: center;
+    }
+
+    .blog-post-hero .label {
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .blog-post-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 900;
+      line-height: 1.1;
+      max-width: 900px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .blog-post-hero .meta {
+      color: var(--text-light);
+      font-size: 0.9rem;
+    }
+
+    .blog-body {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    .blog-body h2 {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin: 2.5rem 0 1rem;
+    }
+
+    .blog-body h3 {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      margin: 2rem 0 0.75rem;
+      color: var(--cream);
+    }
+
+    .blog-body p {
+      color: var(--text-light);
+      line-height: 1.85;
+      font-size: 1.05rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .blog-body strong {
+      color: var(--white);
+    }
+
+    .blog-divider {
+      border: none;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      margin: 2.5rem 0;
+    }
+
+    .partnership-banner {
+      background: var(--red-light);
+      border-radius: 6px;
+      padding: 2.5rem 2rem;
+      margin: 2.5rem 0 3rem;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .partnership-banner .small-label {
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--cream);
+      margin-bottom: 0.75rem;
+    }
+
+    .partnership-banner h3 {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      margin: 0 0 1rem;
+    }
+
+    .partnership-banner p {
+      margin-bottom: 0;
+    }
+
+    .story-card {
+      background: var(--red-light);
+      border-radius: 6px;
+      padding: 2rem;
+      margin: 2rem 0;
+      border-left: 4px solid var(--cream);
+    }
+
+    .story-card h3 {
+      margin-top: 0;
+      font-size: 1.8rem;
+    }
+
+    .story-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+      color: var(--cream);
+      margin-bottom: 0.75rem;
+    }
+
+    .story-image {
+      width: 100%;
+      display: block;
+      border-radius: 5px;
+      margin-bottom: 1.75rem;
+    }
+
+    .image-caption {
+      font-size: 0.78rem !important;
+      line-height: 1.5 !important;
+      opacity: 0.7;
+      margin-top: -1rem;
+      margin-bottom: 1.5rem !important;
+    }
+
+    .photo-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin: 2rem 0 3rem;
+    }
+
+    .photo-gallery img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 5px;
+      display: block;
+    }
+
+    .photo-gallery .wide {
+      grid-column: span 2;
+      height: 380px;
+    }
+
+    .quote-block {
+      border-left: 3px solid var(--cream);
+      padding: 1rem 1.5rem;
+      margin: 2rem 0;
+      background: rgba(255,255,255,0.05);
+      border-radius: 0 4px 4px 0;
+    }
+
+    .quote-block p {
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--cream);
+      margin-bottom: 0;
+    }
+
+    .impact-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .impact-box {
+      background: var(--red-light);
+      border-radius: 5px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .impact-box .num {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: var(--cream);
+      margin-bottom: 0.4rem;
+    }
+
+    .impact-box h4 {
+      font-size: 0.95rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .impact-box p {
+      font-size: 0.82rem;
+      margin-bottom: 0;
+      line-height: 1.55;
+    }
+
+    .stat-note {
+      font-size: 0.78rem !important;
+      opacity: 0.7;
+      line-height: 1.6 !important;
+      margin-top: 1rem;
+    }
+
+    .partner-cta {
+      background: var(--cream);
+      color: var(--red-dark);
+      border-radius: 5px;
+      padding: 3rem 2.5rem;
+      text-align: center;
+      margin: 3rem 0;
+    }
+
+    .partner-cta h3 {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+      color: var(--red-dark);
+    }
+
+    .partner-cta p {
+      color: var(--red-soft);
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .btn-partner {
+      display: inline-block;
+      background: var(--red-dark);
+      color: var(--white);
+      border-radius: 2rem;
+      padding: 1rem 2.5rem;
+      font-weight: 700;
+      font-size: 1.05rem;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .btn-partner:hover {
+      background: var(--red-mid);
+    }
+
+    .sources-box {
+      background: rgba(255,255,255,0.04);
+      border-radius: 5px;
+      padding: 1.5rem;
+      margin: 2.5rem 0;
+    }
+
+    .sources-box h4 {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+      color: var(--cream);
+    }
+
+    .sources-box p {
+      font-size: 0.82rem;
+      line-height: 1.65;
+      margin-bottom: 0.75rem;
+    }
+
+    .approval-note {
+      font-size: 0.78rem !important;
+      opacity: 0.65;
+      text-align: center;
+      line-height: 1.6 !important;
+      margin-top: 2rem;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--cream);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+    }
+
+    .back-link:hover {
+      opacity: 1;
+    }
+
+    @media (max-width: 600px) {
+
+      .blog-post-hero,
+      .blog-body {
+        padding: 3rem 1.5rem;
+      }
+
+      .impact-row {
+        grid-template-columns: 1fr;
+      }
+
+      .photo-gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .photo-gallery .wide {
+        grid-column: span 1;
+        height: 280px;
+      }
+
+      .photo-gallery img {
+        height: 280px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- NAVIGATION -->
+
+  <nav class="navbar">
+
+    <a href="index.html" class="nav-logo">
+      GNET
+    </a>
+
+    <ul class="nav-links">
+
+      <li>
+        <a href="index.html">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="blog.html" class="active">
+          Blog
+        </a>
+      </li>
+
+      <li>
+        <a href="teach.html">
+          Teach
+        </a>
+      </li>
+
+      <li>
+        <a href="book-online.html">
+          Book Online
+        </a>
+      </li>
+
+    </ul>
+
+    <a href="take-action.html" class="btn-action">
+      Take Action
+    </a>
+
+    <button class="nav-toggle">
+      &#9776;
+    </button>
+
+  </nav>
+
+
+
+  <!-- HERO -->
+
+  <section class="blog-post-hero">
+
+    <span class="label">
+      GNET Partner Spotlight
+    </span>
+
+    <h1>
+      Beyond Education: Challenging Heights and the Fight for a Different Future
+    </h1>
+
+    <div class="meta">
+      By GNET Initiative · Partner Spotlight · 7 min read
+    </div>
+
+  </section>
+
+
+
+  <!-- BLOG CONTENT -->
+
+  <div class="blog-body">
+
+    <a href="blog.html" class="back-link">
+      ← Back to Blog
+    </a>
+
+
+    <!-- INTRODUCTION -->
+
+    <p>
+      Education can change the direction of a life. But for children facing
+      exploitation, poverty, and trafficking, getting into a classroom is only
+      part of the journey.
+    </p>
+
+    <p>
+      True change can also require protection, recovery, family support, and
+      the opportunity to build a future beyond the circumstances a child was
+      born into.
+    </p>
+
+    <p>
+      That is why partnerships matter.
+    </p>
+
+    <p>
+      GNET is proud to highlight the work of
+      <strong>Many Hopes</strong> and their Ghana partner,
+      <strong>Challenging Heights</strong>.
+      Through this feature, we are highlighting the work being done in Ghana
+      and sharing the stories of young people whose lives have been transformed
+      through support, education, and opportunity.
+    </p>
+
+
+    <!-- PARTNERSHIP BANNER -->
+
+    <div class="partnership-banner">
+
+      <div class="small-label">
+        GNET × Many Hopes
+      </div>
+
+      <h3>
+        Highlighting Challenging Heights in Ghana
+      </h3>
+
+      <p>
+        GNET believes that young people can use their voices and platforms to
+        highlight organizations already doing meaningful work and help more
+        people understand the issues affecting children around the world.
+      </p>
+
+    </div>
+
+
+
+    <!-- PHOTO GALLERY -->
+
+    <div class="photo-gallery">
+
+      <img
+        src="images/DSC07809.jpg"
+        alt="Child working on Lake Volta in Ghana"
+        class="wide"
+      >
+
+      <img
+        src="images/DSC08475.jpg"
+        alt="Photo from Challenging Heights in Ghana"
+      >
+
+      <img
+        src="images/DSC09464.jpg"
+        alt="Photo from Challenging Heights in Ghana"
+      >
+
+    </div>
+
+
+
+    <hr class="blog-divider" />
+
+
+    <!-- CHALLENGING HEIGHTS -->
+
+    <h2>
+      Meet Challenging Heights
+    </h2>
+
+    <p>
+      Challenging Heights is Many Hopes' partner in Ghana. The organization
+      works with children affected by trafficking and exploitation and supports
+      their recovery, education, and reintegration.
+    </p>
+
+    <p>
+      Their work includes the Recovery Center, where rescued children can
+      receive care and counseling while beginning the process of returning to
+      education and reconnecting with their families where possible.
+    </p>
+
+    <p>
+      The stories of Naru and Alfred show why this work matters. Their journeys
+      are different, but both demonstrate what can happen when a child is given
+      an opportunity to recover, learn, and imagine a future beyond exploitation.
+    </p>
+
+
+
+    <!-- STATISTICS -->
+
+    <h2>
+      The Bigger Picture
+    </h2>
+
+    <p>
+      The stories of individual children exist within a much larger challenge.
+      Child labour remains a serious issue in Ghana and around the world.
+    </p>
+
+    <div class="impact-row">
+
+      <div class="impact-box">
+
+        <div class="num">
+          2.5M
+        </div>
+
+        <h4>
+          Children in Ghana
+        </h4>
+
+        <p>
+          About 2.5 million children ages 5 to 17 are reported to be engaged
+          in child labour in Ghana.
+        </p>
+
+      </div>
+
+
+      <div class="impact-box">
+
+        <div class="num">
+          1.2M
+        </div>
+
+        <h4>
+          In Hazardous Work
+        </h4>
+
+        <p>
+          About 1.2 million children in Ghana are reported to be involved in
+          hazardous work.
+        </p>
+
+      </div>
+
+
+      <div class="impact-box">
+
+        <div class="num">
+          1 in 6
+        </div>
+
+        <h4>
+          Around Lake Volta
+        </h4>
+
+        <p>
+          ILO materials report that one in six children ages 6 to 14 working
+          around Lake Volta are in abusive conditions.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <p class="stat-note">
+      Statistics are drawn from International Labour Organization materials
+      concerning child labour in Ghana and the Lake Volta fisheries sector.
+    </p>
+
+
+    <p>
+      The challenge is also global. According to the latest ILO and UNICEF
+      global estimates, about 138 million children were engaged in child labour
+      in 2024, including about 54 million in hazardous work.
+    </p>
+
+    <p>
+      These numbers represent children whose opportunities can be limited by
+      circumstances far beyond their control.
+    </p>
+
+
+
+    <hr class="blog-divider" />
+
+
+    <!-- NARU -->
+
+    <h2>
+      Naru: From Survival to Law School
+    </h2>
+
+    <div class="story-card">
+
+      <span class="story-tag">
+        Survivor Story
+      </span>
+
+      <h3>
+        Naru
+      </h3>
+
+      <p>
+        After Naru's father passed away, his family struggled with extreme
+        poverty and uncertainty. When his mother remarried, Naru believed that
+        his circumstances were beginning to improve.
+      </p>
+
+      <p>
+        During a school break, Naru's stepfather offered to take him and his
+        brothers to Lake Volta to earn money fishing. But within days, Naru
+        realized that something was wrong. He had been trafficked.
+      </p>
+
+      <p>
+        Naru and other boys were forced to work extremely long hours. If they
+        did not catch enough fish, they faced abuse.
+      </p>
+
+      <p>
+        Years passed before Naru's biological uncle was able to locate Naru and
+        his brothers and negotiate for their release.
+      </p>
+
+      <p>
+        His uncle welcomed the brothers into his home and encouraged them to
+        continue their education.
+      </p>
+
+      <p>
+        Naru returned to school and worked hard. He quickly became one of the
+        top students in his class.
+      </p>
+
+      <p>
+        Eventually, he was accepted into university and later admitted to law
+        school. However, the cost of continuing his education was more than he
+        could afford.
+      </p>
+
+
+      <img
+        src="images/DSC09500.jpg"
+        alt="Photo connected to Challenging Heights and its work in Ghana"
+        class="story-image"
+      >
+
+
+      <p>
+        That was when Naru found Challenging Heights and its Enhanced
+        Reintegration Program for survivors of trafficking.
+      </p>
+
+      <p>
+        Through the program, Naru received a scholarship that allowed him to
+        continue his education.
+      </p>
+
+      <div class="quote-block">
+
+        <p>
+          Today, Naru is a second year law student.
+        </p>
+
+      </div>
+
+      <p>
+        His dream is to work in policy and help write and reform laws around
+        child labour so that other children do not experience what he endured.
+      </p>
+
+    </div>
+
+
+
+    <hr class="blog-divider" />
+
+
+    <!-- ALFRED -->
+
+    <h2>
+      Alfred: From the Recovery Center to Leadership
+    </h2>
+
+    <div class="story-card">
+
+      <span class="story-tag">
+        Survivor Story
+      </span>
+
+      <h3>
+        Alfred
+      </h3>
+
+
+      <img
+        src="images/PHOTO-2023-06-08-18-06-58-2.jpg"
+        alt="Alfred during his childhood on Lake Volta"
+        class="story-image"
+      >
+
+
+      <p>
+        To know Alfred is to love him. He is driven, charismatic, and his warmth
+        and resilience leave a lasting impression.
+      </p>
+
+      <p>
+        But Alfred's story began in a much darker place.
+      </p>
+
+      <p>
+        Alfred was born into slavery on Lake Volta in Ghana. His mother had been
+        trafficked before he was born. When he was old enough to walk, Alfred
+        was forced to work long days on fishing boats.
+      </p>
+
+      <p>
+        He mended nets, entered dangerous waters to untangle them, and endured
+        abuse when exhaustion overtook him.
+      </p>
+
+      <p>
+        The memories of those years stayed with him. He remembered the constant
+        fear and the suffering he witnessed around him, including the suffering
+        of his mother.
+      </p>
+
+
+      <img
+        src="images/DSC06519.jpg"
+        alt="Alfred and the Lake Volta community"
+        class="story-image"
+      >
+
+
+      <p>
+        At ten years old, Alfred was rescued by Challenging Heights and taken
+        to the Recovery Center.
+      </p>
+
+      <p>
+        Alfred received medical care and counseling and was enrolled in school.
+        He had never attended school before and began first grade at eleven
+        years old.
+      </p>
+
+      <p>
+        Although starting school at that age was intimidating, Alfred worked
+        hard and caught up with his peers.
+      </p>
+
+      <p>
+        After high school, Alfred earned the highly competitive opportunity to
+        attend university.
+      </p>
+
+      <p>
+        Yet Alfred wanted to give back to the place that had helped change his
+        life.
+      </p>
+
+      <p>
+        During university, he returned to the Recovery Center and worked with
+        children who had been rescued and reunited with their families.
+      </p>
+
+      <p>
+        He helped monitor children to make sure they were nourished and
+        attending school. Most importantly, Alfred became an example for other
+        children at the center.
+      </p>
+
+      <div class="quote-block">
+
+        <p>
+          They could see someone who had experienced circumstances similar to
+          theirs and gone on to build a different future.
+        </p>
+
+      </div>
+
+      <p>
+        Alfred earned his undergraduate degree in Business and Accounting in
+        2023. His journey then continued to the United States, where he pursued
+        an MBA at Missouri Baptist University and graduated in 2025.
+      </p>
+
+    </div>
+
+
+
+    <hr class="blog-divider" />
+
+
+    <!-- ADDITIONAL PHOTOS -->
+
+    <h2>
+      A Story That Deserves to Be Seen
+    </h2>
+
+    <p>
+      The photographs shared with GNET help us see the environment in which
+      many of these children lived and worked. They remind us that behind every
+      statistic is a person with a story, a family, a dream, and a future worth
+      protecting.
+    </p>
+
+    <div class="photo-gallery">
+
+      <img
+        src="images/DSC07809.jpg"
+        alt="Photo from Challenging Heights in Ghana"
+      >
+
+      <img
+        src="images/DSC08475.jpg"
+        alt="Photo from Challenging Heights in Ghana"
+      >
+
+      <img
+        src="images/DSC09464.jpg"
+        alt="Photo from Challenging Heights in Ghana"
+      >
+
+      <img
+        src="images/DSC09500.jpg"
+        alt="Photo from Challenging Heights in Ghana"
+      >
+
+      <img
+        src="images/DSC09696.jpg"
+        alt="Photo from Challenging Heights in Ghana"
+        class="wide"
+      >
+
+    </div>
+
+
+
+    <hr class="blog-divider" />
+
+
+    <!-- PARTNERSHIPS -->
+
+    <h2>
+      Why Partnerships Matter
+    </h2>
+
+    <p>
+      Stories like Naru's and Alfred's remind us that meaningful change does
+      not happen through one organization working alone.
+    </p>
+
+    <p>
+      It takes people willing to listen. Organizations willing to collaborate.
+      Communities willing to support children. And survivors whose experiences
+      can help shape a better future for those who come after them.
+    </p>
+
+    <p>
+      For GNET, partnerships are an important part of our mission. We believe
+      that young people can use their voices and platforms to highlight
+      organizations already doing meaningful work and help more people
+      understand the issues affecting children around the world.
+    </p>
+
+    <div class="quote-block">
+
+      <p>
+        A child's circumstances should never determine the limits of their
+        future.
+      </p>
+
+    </div>
+
+
+
+    <hr class="blog-divider" />
+
+
+    <!-- FUTURE -->
+
+    <h2>
+      From Ghana to the World
+    </h2>
+
+    <p>
+      Challenging Heights' work demonstrates what can happen when a child is
+      given the opportunity to recover, return to education, and imagine a
+      future beyond what they have experienced.
+    </p>
+
+    <p>
+      Naru is pursuing law with the goal of influencing policy. Alfred has
+      pursued higher education and continues to carry his experience into a new
+      chapter of his life.
+    </p>
+
+    <p>
+      Their journeys are different, but both demonstrate the power of
+      opportunity.
+    </p>
+
+    <p>
+      At GNET, we are honored to help highlight these stories and the work
+      behind them.
+    </p>
+
+
+
+    <!-- CTA -->
+
+    <div class="partner-cta">
+
+      <h3>
+        Learn More and Share Their Work
+      </h3>
+
+      <p>
+        Awareness is one part of creating change. Learn more about the
+        organizations working to protect children and expand opportunities,
+        and help share their work with others.
+      </p>
+
+      <a
+        href="https://manyhopes.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-partner"
+      >
+        Learn More About Many Hopes
+      </a>
+
+    </div>
+
+
+
+    <!-- SOURCES -->
+
+    <div class="sources-box">
+
+      <h4>
+        Sources
+      </h4>
+
+      <p>
+        International Labour Organization. Ghana child labour and Lake Volta
+        fisheries project materials.
+      </p>
+
+      <p>
+        International Labour Organization and UNICEF. 2024 Global Estimates
+        of Child Labour.
+      </p>
+
+      <p>
+        Story information and photographs provided by Many Hopes for this GNET
+        feature.
+      </p>
+
+    </div>
+
+
+
+    <p class="approval-note">
+      This feature was prepared using information and photographs provided by
+      Many Hopes. The feature is intended to be reviewed and approved by Many
+      Hopes and Challenging Heights before publication.
+    </p>
+
+
+    <a href="blog.html" class="back-link">
+      ← Back to Blog
+    </a>
+
+  </div>
+
+
+
+  <!-- DISQUS COMMENTS -->
+
+  <div style="max-width:780px; margin:0 auto; padding:0 2rem 4rem;">
+
+    <div id="disqus_thread"></div>
+
+    <script>
+
+      var disqus_config = function () {
+        this.page.url = window.location.href;
+        this.page.identifier = window.location.pathname;
+      };
+
+      (function() {
+
+        var d = document,
+            s = d.createElement('script');
+
+        s.src = 'https://gnet-initiative.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+
+        (d.head || d.body).appendChild(s);
+
+      })();
+
+    </script>
+
+    <noscript>
+      Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript">
+        comments powered by Disqus.
+      </a>
+    </noscript>
+
+  </div>
+
+
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+
+        <div class="footer-logo">
+          GNET
+        </div>
+
+        <p>
+          Girls Need Education Initiative
+        </p>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <h4>
+          Pages
+        </h4>
+
+        <ul>
+
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="blog.html">
+              Blog
+            </a>
+          </li>
+
+          <li>
+            <a href="teach.html">
+              Teach
+            </a>
+          </li>
+
+          <li>
+            <a href="book-online.html">
+              Book Online
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div class="footer-contact">
+
+        <h4>
+          Location
+        </h4>
+
+        <p>
+          Columbus, OH
+        </p>
+
+        <a href="mailto:girlsneededucation@gmail.com">
+          girlsneededucation@gmail.com
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <p>
+        &copy; 2021 Girls Need Education Initiative.
+        All rights reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <script src="main.js"></script>
+
+</body>
+</html>
